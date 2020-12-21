@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+     <script src="js/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="div">
+   > <H2>introduction of jquery-Ui</H2>
+    <input id="dateinput" type="text" placeholder="select date">
+  </div>  
+</body>
+<script>
+ $("#dateinput").datepicker({
+      numberOfMonths:1, // it shows how many month can be seen on screen
+      changeYear:true, //it helps to change year ,it takes bolean value
+      changeMonth:true, //it helps to change month ,it takes boolean value
+      showOtherMonths:true, // it helps to show dates of other months
+      minDate:new Date(2017,0,01), //used to set min date user can select,(YYYY/MM/DD)
+      maxDate:new Date(2019,0,01), //use to set maximum date user can select,(YYYY/MM/DD)
+ });
+
+
+</script>
+</html>
